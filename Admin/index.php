@@ -5,6 +5,7 @@ session_start();
 if((isset($_SESSION['adminLogin'])&& $_SESSION['adminLogin']== true)){
   redirect('dashboard.php'); 
     }
+       /*  cette bloc de code  évite à un utilisateur déjà connecté de revenir sur la page de connexion.*/ 
     ?>
 
 <!DOCTYPE html>
